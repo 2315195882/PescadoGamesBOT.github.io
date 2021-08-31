@@ -8,7 +8,7 @@
 body {
   color: #fff;
   margin: 0;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
+  font-family: 'Roboto', "Noto Sans JP", sans-serif;
   min-height: 100vh;
   background-image: linear-gradient(125deg,#005078,#00785D);
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
@@ -74,50 +74,11 @@ padding: 8px 0 0 6px;
   color: #ffff00;
 }
 
-
-
-
-
-
-.kiyaku {
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px 30px;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
-}
-
-.kiyaku h4 {
-  display: inline-block;
-  text-align: left;
-  font-weight:lighter;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header {
   height: 60px;
   width: 100%;
   padding: 0px 15px;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-image: linear-gradient(125deg,#00a56a,#0078a5);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -255,17 +216,6 @@ dl::after {
     display: block;
     clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .side-menu{
   position: fixed;
@@ -438,38 +388,6 @@ font-family: "Meiryo UI";
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pglinux {
 font-size: 40px;
 font-family: "Meiryo UI";	
@@ -501,14 +419,6 @@ font-family: "Meiryo UI";
     background: #0066DB;
 }
 
-
-
-
-
-
-
-
-
 .download {
 
         
@@ -533,21 +443,3 @@ font-family: "Meiryo UI";
 .download:hover{
     background: #0066DB;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
