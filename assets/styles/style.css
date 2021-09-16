@@ -15,63 +15,8 @@ body {
 
 }
 
-
-
-.cp_ipcheck {
-  padding: 20px 0;
-  width: 200px;
-  text-align: left;
-  position: relative;
-}
-.cp_ipcheck input {
-	display: none;
-}
-.cp_ipcheck label {
-	position: relative;
-	display: block;
-
-	padding-right: 30px;
-	cursor: pointer;
-  font-size: 1rem;
-}
-.cp_ipcheck input[type='checkbox'] {
-	position: absolute;
-	visibility: hidden !important;
-}
-.cp_ipcheck input[type='checkbox'] + label:before,
-.cp_ipcheck input[type='checkbox'] + label:after {
-	position: absolute;
-
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	margin-top: -7px;
-	content: '';
-padding: 8px 0 0 6px;
-}
-.cp_ipcheck input[type='checkbox'] + label:before {
-	right: 0;
-	width: 60px;
-	height: 30px;
-	border: 1px solid #e4e3e1;
-	border-radius: 30px;
-	background: #ffffff;
-}
-.cp_ipcheck input[type='checkbox'] + label:after {
-	right: 29px;
-	width: 30px;
-	height: 30px;
-	-webkit-transition: all 200ms ease-out;
-	        transition: all 200ms ease-out;
-	border-radius: 50%;
-	background: #bdbdbd;
-}
-.cp_ipcheck input[type='checkbox']:checked + label:after {
-	right: 0;
-	background: #00b111;
-  content: "";
-  font-family:"Font Awesome 5 Free";
-  padding: 6px 0 0 8px;
-  color: #ffff00;
+.center{
+text-align: center;
 }
 
 .kiyaku {
@@ -215,10 +160,44 @@ a {
   }
 }
 
+/* 一回転を行うクラス */
+.turn{
+    /* transition効果の設定 */
+    transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+ 
+    /* 360度回転 */
+    transform: rotateZ(360deg);
+    -moz-transition:rotateZ(360deg);
+    -webkit-transform:rotateZ(360deg);
+}
 
+/* 十回転を行うクラス */
+.turn10{
+    /* transition効果の設定 */
+    transition: all 20s linear;
+    -moz-transition: all 20s linear;
+    -webkit-transition: all 20s linear;
+ 
+    /* 360度回転 */
+    transform: rotateZ(3600deg);
+    -moz-transition:rotateZ(3600deg);
+    -webkit-transform:rotateZ(3600deg);
+}
 
-
-
+/* 五回転を行うクラス */
+.turn5{
+    /* transition効果の設定 */
+    transition: all 10s linear;
+    -moz-transition: all 10s linear;
+    -webkit-transition: all 10s linear;
+ 
+    /* 360度回転 */
+    transform: rotateZ(1800deg);
+    -moz-transition:rotateZ(1800deg);
+    -webkit-transform:rotateZ(1800deg);
+}
 
 dl{
 
@@ -302,12 +281,6 @@ font-size: 30px;
 
 }
 
-
-
-
-
-
-
 /* container */
 .wrapper{
     width:100%;
@@ -358,8 +331,6 @@ font-size: 30px;
     font-weight: normal;
     text-align: center;
     color: #fff;
-
-
     border: 0;
     background: none;
     display: block;
@@ -408,8 +379,52 @@ font-size: 30px;
 
 
 
+.heading3{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0066DB;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.75s;
+    cursor: pointer;
+}
 
+.heading3:hover{
+    background: #0066DB;
+}
 
+.heading4{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0066DB;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.wrapper .text .heading2:hover{
+    background: #0066DB;
+}
 
 .copyright{
 
@@ -472,4 +487,105 @@ font-family: "Meiryo UI";
 
 .download:hover{
     background: #0066DB;
+}
+
+.sub_ttl {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ここからがニュース記事のCSS */
+
+.news_list {
+  margin: 0 5%;
+}
+
+.news_list u {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news_list_item {
+  padding: 25px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.news_list_item:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+.news_list_item a {
+ position: relative;
+ display: flex;
+ padding-right: 30px;
+}
+
+.news_list_date {
+  font-size: 15px;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.news_item_1 {
+  background: #0080FF;
+  border-radius: 14px;
+  width: 6em;
+  /* 親要素の文字サイズを基準 */
+  text-align: center;
+  margin-left: 20px;
+}
+
+.news_item_2 {
+  background: #DF0101;
+  border-radius: 14px;
+  width: 6em;
+  /* 親要素の文字サイズを基準 */
+  text-align: center;
+  margin-left: 20px;
+}
+
+.arrow {
+  width: 25px;
+  height: 1px;
+  background: #707070;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.arrow::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 1px;
+  background: #707070;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0px;
+  bottom: 2px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .news_list_item a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .news_list_item a  {
+        font-size: 14px;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+    .arrow {
+        display: none;
+    }
+    .news_list_item a {
+        padding-right: 0;
+    }
 }
