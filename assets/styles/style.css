@@ -654,3 +654,8 @@ font-family: "Meiryo UI";
   background-image: -webkit-linear-gradient(right, #0250E7 0%, #04CD2C 100%);
   background-image: linear-gradient(to left, #0250E7 0%, #04CD2C 100%);
 }
+
+.update2 {
+  padding: 1rem 2rem;
+  border-left: 4px solid #000;
+}
